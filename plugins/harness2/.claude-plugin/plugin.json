@@ -1,0 +1,22 @@
+{
+  "name": "harness2",
+  "displayName": "Harness²",
+  "version": "0.1.0",
+  "description": "Design, refine, and audit an agent harness with the Harness² Propose–Probe–Compose loop. A harness is everything around a model that makes it an agent: system prompt, guardrails, memory, tool guidance, skills, subagents, scripts, and plugins. The model stays fixed; only the harness changes.",
+  "author": {
+    "name": "Harness² contributors",
+    "url": "https://github.com/osa822630-droid/harness2"
+  },
+  "homepage": "https://harness2.github.io",
+  "repository": "https://github.com/osa822630-droid/harness2",
+  "license": "Apache-2.0",
+  "keywords": [
+    "harness",
+    "agent-scaffolding",
+    "recursive-improvement",
+    "skills",
+    "subagents",
+    "prompt-engineering",
+    "evaluation"
+  ]
+}

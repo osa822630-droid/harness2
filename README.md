@@ -56,6 +56,7 @@ https://github.com/user-attachments/assets/76b10548-b14b-4c8f-9aa5-a93662df4d56
 - [Video overview](#video-overview)
 - [Harness components](#harness-components)
 - [Install](#install)
+- [Use in Claude](#use-in-claude)
 - [Run a benchmark](#run-a-benchmark)
 - [Experiments](#experiments)
 - [Web access](#web-access)
@@ -105,6 +106,30 @@ gcloud auth application-default login
 
 See the [setup guide](docs/SETUP.md) for model settings, authentication
 alternatives, and the [Codex executor](docs/SETUP.md#codex-executor).
+
+## Use in Claude
+
+This repository is also a **Claude plugin marketplace**. Adding it brings the
+Harness² method — Propose–Probe–Compose refinement, component selection, harness
+audits, and experience reflection — into Claude web, the desktop app, and Claude
+Code as skills, commands, and agents. No Python install, no API keys.
+
+In Claude web or the desktop app, open [Customize → Plugins](https://claude.ai/customize/plugins),
+choose **Add → Add marketplace**, and enter `osa822630-droid/harness2` (or the
+full URL `https://github.com/osa822630-droid/harness2`). Sync, then add the
+`harness2` plugin. In Claude Code:
+
+```text
+/plugin marketplace add osa822630-droid/harness2
+/plugin install harness2@harness2
+```
+
+Then paste a harness and ask what is wrong with it, describe a task an agent
+keeps failing, or attach trajectories from a run and ask for a refinement. The
+[plugin guide](docs/PLUGIN.md) lists every skill, command, and agent, explains
+the layout, and shows how to validate changes with
+`python3 scripts/check_plugin.py`. The plugin runs no code; the sections below
+cover the reference implementation that executes real rollouts.
 
 ## Run a benchmark
 

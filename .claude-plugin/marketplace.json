@@ -1,0 +1,34 @@
+{
+  "name": "harness2",
+  "description": "Harness² — recursive agent harnessing skills, commands, and agents for Claude.",
+  "owner": {
+    "name": "Harness² contributors",
+    "url": "https://github.com/osa822630-droid/harness2"
+  },
+  "plugins": [
+    {
+      "name": "harness2",
+      "source": "./plugins/harness2",
+      "displayName": "Harness²",
+      "description": "Design, refine, and audit an agent harness with the Harness² Propose–Probe–Compose loop: system prompt, guardrails, memory, tool guidance, skills, subagents, scripts, and plugins — with the model held fixed.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Harness² contributors",
+        "url": "https://github.com/osa822630-droid/harness2"
+      },
+      "homepage": "https://harness2.github.io",
+      "repository": "https://github.com/osa822630-droid/harness2",
+      "license": "Apache-2.0",
+      "category": "development",
+      "keywords": [
+        "harness",
+        "agent-scaffolding",
+        "recursive-improvement",
+        "skills",
+        "subagents",
+        "prompt-engineering",
+        "evaluation"
+      ]
+    }
+  ]
+}
